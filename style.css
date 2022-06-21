@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.intro{
+    display: flex;
+}
+.container{
+    text-align: center;
+    margin: 100px;
+}
+.item{
+    display: flex;
+}
+.quote p{
+    display: flex;
+    margin: 180px;
+    font-size: 100px;
+}
