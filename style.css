@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 ul{
     list-style: none;
@@ -7,9 +9,38 @@ ul{
 a{
     text-decoration: none;
 }
+.header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header , .footer{
+    background-color: #1f2937;
+}
+header{ font-size: 24px;
+        color: #f9faf8;
+        
+}
+.intro{
+    display: flex;
+    margin: 200px 300px;
+    justify-content: space-between;
+    
+}
+h1{
+    font-size: 48px;
+    color: #f9faf8;
+}
+.introtxt p,
+.links a{
+    font-size: 18px;
+    color:#e5e7eb;
+}
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
 }
 .links{
     display: flex;
@@ -19,6 +50,21 @@ a{
 .intro{
     display: flex;
 }
+button , .buy{
+    background-color: #3882f6;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 30px;
+}
+.buy{
+    width: 600px;
+    display: flex;
+    
+    justify-content: center;
+    justify-self: center;
+    margin: 0px;
+}
+.buy p{}
 .container{
     text-align: center;
     margin: 100px;
@@ -26,8 +72,23 @@ a{
 .item{
     display: flex;
 }
-.quote p{
+.quote{
     display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font-weight: light;
+    font-style: italic;
+    padding: 40px 100px;
     margin: 180px;
-    font-size: 100px;
+    font-size: 36px;
+    flex-wrap: wrap;
+}
+.quote.thor{
+    flex: 1;
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
 }
