@@ -2,29 +2,41 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
+    
+}
+body button{
+    color: white;
+    border: #e5e7eb;
+    
+}
+.buy button{
+    border-style: solid;
 }
 .header{
     display: flex;
     flex-direction: column;
     
 }
-.header , .footer{
+.nav , .footer, .header{
     background-color: #1f2937;
 }
+
 header{ font-size: 24px;
         color: #f9faf8;
         
 }
 .intro{
     display: flex;
-    margin: 200px 300px;
+    margin: 200px auto;
     justify-content: space-between;
+    gap: 10%;
     
 }
 h1{
@@ -40,7 +52,9 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 100px;
+    padding-left: 15% ;
+    padding-right: 15%;
+    
 }
 .links{
     display: flex;
@@ -49,7 +63,20 @@ h1{
 }
 .intro{
     display: flex;
-}
+    }
+.image{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+    }
+.image img{
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 230px;
+    width: 510px;
+    border-radius: 12px;
+}    
 button , .buy{
     background-color: #3882f6;
     border-radius: 12px;
@@ -57,38 +84,64 @@ button , .buy{
     padding: 10px 30px;
 }
 .buy{
-    width: 600px;
-    display: flex;
-    
-    justify-content: center;
-    justify-self: center;
-    margin: 0px;
+    width: 70%;
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin:5% auto;
+    padding: 30px;
 }
-.buy p{}
+.buy button{
+    justify-items: center;
+}
+
 .container{
     text-align: center;
-    margin: 100px;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .item{
     display: flex;
+    justify-content: center;
+    
+    gap: 5%;
+}
+.item img{
+    border-radius: 12px;
+    width: 148px;
+    height: 148px;
+    border: #3882f6;
+    border-style: solid;
+}
+.item li{
+    width: 20%;
+    flex-shrink: 1;
 }
 .quote{
+    background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
-    background-color: #e5e7eb;
     font-weight: light;
     font-style: italic;
-    padding: 40px 100px;
-    margin: 180px;
+    padding: 40px 30%;
+    margin: 0px;
     font-size: 36px;
-    flex-wrap: wrap;
+    
 }
 .quote.thor{
-    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 
 }
 .footer{
     display: flex;
     justify-content: center;
     padding: 20px ;
+    color: white;
 }
